@@ -7,6 +7,9 @@
 header{
   margin: auto;
 }
+body{
+  /* background-color: #F5F8FA; */
+}
 /* prima sezione header (lingua+login)*/
 .header-signin{
   background-color: #F4F9FD;
@@ -55,6 +58,9 @@ header{
   color:#3CB9CD;
 }
 
+.header-signin-right button{
+  margin-left: 20px;
+}
 button{
   background-color:#FE775A;
   border: 1px solid #FBB8AB;
@@ -71,6 +77,7 @@ button{
 .header-nav{
   padding: 0 15%;
   line-height: 80px;
+  background-color: #fff;
 }
 
 .header-nav img{
@@ -92,18 +99,6 @@ li:first-child .fa-chevron-down{
   margin-right: 0;
 }
 /* sezione header principale con background */
-.header-background{
-  display: inline-block;
-  background-image: url(../img/jumbotron.png);
-  background-size: 1429px 695px;
-  height: 695px;
-  margin: auto;
-  background-position: right bottom ;
-  background-repeat: no-repeat;
-  background-origin:content-box;
-  padding: 0 15%;
-}
-
 .gradiente{
   display: inline-block;
   background: linear-gradient(to right, #fef7ef,#fff1ee);
@@ -114,7 +109,31 @@ li:first-child .fa-chevron-down{
   background-repeat: no-repeat;
   height: 695px;
   width: 100%;
+  position: relative;
 }
+
+.header-background{
+  display: inline-block;
+  padding: 0 15%;
+  background-image: url(../img/jumbotron.png);
+  background-size: 1492px;
+  height: 695px;
+  background-position: 100% right  ;
+  background-repeat: no-repeat;
+  background-origin:content-box;
+  position: relative;
+  border-bottom: 4px solid #33475B;
+
+  /* height: 450px;
+  background-color: #fef7ef;
+  border-bottom: 2px solid #33475B;
+  position: relative;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: 90% 48%; */
+}
+
 .banner{
   float: left;
   max-width: 40%;
@@ -145,4 +164,35 @@ li:first-child .fa-chevron-down{
 .banner button{
   margin-bottom: 20px;
   padding: 20px 30px;;
+}
+
+#banner-bottom-left{
+  height: 52px;
+  background-color: #AFEBE4;
+  /* background: linear-gradient(to right, #AFEBE4,#00A48D); */
+  border-top: 3px solid #33475B;
+  /* border-bottom: 2px solid #33475B; */
+  position: absolute;
+  top:calc(100% - 52px);
+  left:0;
+  width: 15vw;
+}
+
+#banner-bottom-right{
+  height: 122px;
+  background-color: #00A48D;
+  /* background: linear-gradient(to right, #AFEBE4,#00A48D); */
+  border-top: 3px solid #33475B;
+  /* border-bottom: 2px solid #33475B; */
+  position: absolute;
+  top:calc(100% - 122px);
+  right:-15%;
+  width: calc(100vw - 1450px);
+}
+.dioporco{
+  background: linear-gradient(to right, #AFEBE4,#00A48D);
+  position: absolute;
+  bottom:0;
+  background-size: 100px 100px;
+  display: inline-block;
 }
