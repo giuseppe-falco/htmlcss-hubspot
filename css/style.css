@@ -10,8 +10,8 @@ header{
 /* prima sezione header (lingua+login)*/
 .header-signin{
   background-color: #F4F9FD;
-  font-size: 20px;
-  padding:30px 10%;
+  font-size: 16px;
+  padding:30px 15%;
   font-family: 'Roboto', sans-serif;
   border-bottom: 2px solid #32495B;
 }
@@ -69,9 +69,7 @@ button{
 }
 /* seconda sezione header (logo+info) */
 .header-nav{
-  background-color: #fff000;
-  height: 80px;
-  padding: 0 10%;
+  padding: 0 15%;
   line-height: 80px;
 }
 
@@ -81,14 +79,70 @@ button{
 }
 
 .navbar li{
-  font-size: 20px;
+  font-size: 14px;
   list-style: none;
   display: inline-block;
   float: right;
   font-family: 'Roboto', sans-serif;
-
+  padding: 0 5px;
+  color:#466389;
 }
 
 li:first-child .fa-chevron-down{
   margin-right: 0;
+}
+/* sezione header principale con background */
+.header-background{
+  display: inline-block;
+  background-image: url(../img/jumbotron.png);
+  background-size: 1429px 695px;
+  height: 695px;
+  margin: auto;
+  background-position: right bottom ;
+  background-repeat: no-repeat;
+  background-origin:content-box;
+  padding: 0 15%;
+}
+
+.gradiente{
+  display: inline-block;
+  background: linear-gradient(to right, #fef7ef,#fff1ee);
+  /* background: rgb(254,247,240);
+  background: linear-gradient(90deg, rgba(254,247,240,1) 41%, rgba(255,241,238,1) 47%); */
+  /* background-image: radial-gradient(#fff1ee,#fef7ef); */
+  background-size: 100% 695px;
+  background-repeat: no-repeat;
+  height: 695px;
+  width: 100%;
+}
+.banner{
+  float: left;
+  max-width: 40%;
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.banner h1{
+  margin-top:30px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  color:#33475B;
+
+}
+
+.banner p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  color:#344D64;
+  margin-bottom:20px;
+}
+
+.banner p:last-child{
+  font-size: 20px;
+}
+
+.banner button{
+  margin-bottom: 20px;
+  padding: 20px 30px;;
 }
