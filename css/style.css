@@ -1,6 +1,94 @@
  * {
   margin: 0;
   padding: 0;
-  box-sizing:
-  border-box;
+  box-sizing: border-box;
   }
+/* sezione header */
+header{
+  margin: auto;
+}
+/* prima sezione header (lingua+login)*/
+.header-signin{
+  background-color: #F4F9FD;
+  font-size: 20px;
+  padding:30px 10%;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #32495B;
+}
+
+.header-signin div{
+  display: inline-block;
+}
+
+.header-signin-left{
+  float:left;
+  /* word-spacing: 10px; */
+}
+
+.header-signin-right{
+  float:right;
+  margin-top: -10px;
+}
+
+.fa-globe-europe{
+  margin-right:10px;
+}
+#english{
+  padding-right: 20px;
+  border-right: 2px solid black;
+}
+.fa-chevron-down{
+  margin: 0 10px;
+}
+
+#contact{
+  margin-left: 20px;
+}
+
+ .header-signin::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa-search{
+  color:#3CB9CD;
+}
+
+button{
+  background-color:#FE775A;
+  border: 1px solid #FBB8AB;
+  padding: 10px;
+  color:#fff;
+  border-radius: 5px;
+}
+
+.login{
+  background-color: #fff;
+  color:#FE775A;
+}
+/* seconda sezione header (logo+info) */
+.header-nav{
+  background-color: #fff000;
+  height: 80px;
+  padding: 0 10%;
+  line-height: 80px;
+}
+
+.header-nav img{
+  float: left;
+  margin: 20px 0;
+}
+
+.navbar li{
+  font-size: 20px;
+  list-style: none;
+  display: inline-block;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+li:first-child .fa-chevron-down{
+  margin-right: 0;
+}
