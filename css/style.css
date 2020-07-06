@@ -198,12 +198,8 @@ li:first-child .fa-chevron-down{
 }
 
 /* sezione main finalmente */
-main{
- /* width: 70%; */
-/* margin:auto; */
+.padding{
 padding: 0 15%;
-/* text-align: center; */
-
 }
 
 .cube{
@@ -316,6 +312,7 @@ padding: 0 15%;
 
 .block-vr img{
   margin-bottom: 30px;
+  height: 150px;
 }
 
 .block-vr h2{
@@ -332,10 +329,75 @@ padding: 0 15%;
   text-align:center;
   font-size: 20px;
 }
+/* sezione gradiente */
+.gradients{
+  background: linear-gradient(121deg, rgba(0,172,181,1) 29%, rgba(0,188,166,1) 66%);
+  background: rgb(0,172,181);
+  height: 800px;
+  margin-top: 60px;
+  padding-bottom:30px;
+}
+
+.text-gradients h2{
+  text-align: center;
+  color: #fff;
+  padding: 40px 15%;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.text-gradients p{
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 50px;
+  padding: 0 15%;
+}
+/* inizio tabella */
+.square{
+  float: left;
+  width: 25%;
+  padding: 20px 5px;
+}
+
+.square li{
+  list-style: none;
+  margin-TOP: 20PX;
+  padding: 5px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.row-up, .row-down{
+  padding: 0 15%;
+}
+.row-down{
+  margin-bottom:300px;
+}
+.row-up .square{
+  border-bottom: 1px solid #fff;
+}
+
+.row-up .square:not(:last-child),
+.row-down .square:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.square ul li:nth-of-type(3){
+  font-size: 15px;
+}
+.square ul li:nth-of-type(2){
+  font-weight: 600;
+}
 
 
 
 
+/* .gradients::after{
+  content: "";
+  clear: both;
+  display: block;
+} */
 
 
 .ciao{
