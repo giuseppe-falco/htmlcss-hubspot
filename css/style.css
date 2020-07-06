@@ -6,6 +6,7 @@
 /* sezione header */
 header{
   margin: auto;
+  margin-bottom: 5vh;
 }
 body{
   background-color: #F5F8FA;
@@ -234,29 +235,45 @@ padding: 0 15%;
   box-shadow: 3px 3px 3px 3px #bab8b8;
 
 }
-
+.block, h2, p{
+  color:#33475B;
+}
+.block-hr .text h2{
+  font-size: 30px;
+  font-weight: bold;
+}
 .fa-check-circle:first-child{
   margin-left: 0;
+}
+
+.block li{
+  list-style: none;
+  text-align: left;
+}
+.block button{
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
 }
 /* horizontal block */
 .block-hr{
   padding: 100px;
+  width: 100%;
 }
+
 .block-hr .img{
   float: left;
-  height: 200px;
-  width: 200px;
+  padding-left: 5%;
 }
 .block-hr button{
   font-size: 30px;
   margin-top: 20px;
 }
 .block-hr .text{
-  margin-left:300px;
+  margin-left:30%;
   text-align: justify;
   word-spacing: 5px;
   font-size: 20px;
-  color:#33475B;
 }
 
 .block-hr .text h2{
@@ -264,16 +281,15 @@ padding: 0 15%;
   margin-bottom: 30px;
   font-weight: bold;
 }
-.popfeat-top{
-  position: relative;
-}
-#popfeat{
-  font-size: 25px;
-}
 .popfeat{
-  position: absolute;
-  top:14px;
-  right: 0;
+  font-size: 25px;
+  margin-top: 30px;
+}
+#hr-block-hr{
+  position:relative;
+  top:18px;
+  right: -300px;
+  width:350px;
 }
 .block-hr .text p{
   margin: 20px 0;
@@ -281,7 +297,6 @@ padding: 0 15%;
 
 }
 .block-hr li{
-  list-style:none;
   display: inline;
 }
 
@@ -289,10 +304,34 @@ padding: 0 15%;
   margin: 0 15px;
   color: #FE775A;
 }
+/* blocchi verticali */
+.block-vr{
+  width: calc(100% / 3 - 38px);
+  text-align: center;
+  margin-right: 50px;
+}
+#last{
+  margin-right: 0;
+}
 
+.block-vr img{
+  margin-bottom: 30px;
+}
 
+.block-vr h2{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
 
+.block-vr p{
+  margin-bottom: 30px;
+}
 
+.block-vr p{
+  text-align:center;
+  font-size: 20px;
+}
 
 
 
