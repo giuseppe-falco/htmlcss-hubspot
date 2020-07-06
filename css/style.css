@@ -12,7 +12,6 @@ body{
 }
 .container{
   font-family: 'Roboto', sans-serif;
-
 }
 /* prima sezione header (lingua+login)*/
 .header-signin{
@@ -32,8 +31,8 @@ body{
 }
 
 .header-signin-right{
-  float:right;
   margin-top: -10px;
+  float:right;
 }
 
 .fa-globe-europe{
@@ -108,9 +107,7 @@ li:first-child .fa-chevron-down{
   /* background: rgb(254,247,240);
   background: linear-gradient(90deg, rgba(254,247,240,1) 41%, rgba(255,241,238,1) 47%); */
   /* background-image: radial-gradient(#fff1ee,#fef7ef); */
-  background-size: 100% 695px;
   background-repeat: no-repeat;
-  height: 695px;
   width: 100%;
   position: relative;
 }
@@ -200,12 +197,19 @@ li:first-child .fa-chevron-down{
 }
 
 /* sezione main finalmente */
+main{
+ /* width: 70%; */
+/* margin:auto; */
+padding: 0 15%;
+/* text-align: center; */
+
+}
+
 .cube{
-  width: 60%;
-  margin:auto;
-  text-align: center;
   color:#33475B;
   margin-top: 5vh;
+  text-align: center;
+  margin: auto;
 }
 
 .cube h2{
@@ -216,4 +220,87 @@ li:first-child .fa-chevron-down{
 .cube p{
   font-size: 24px;
   word-spacing: 5px;
+  max-width: 50%;
+  margin: auto;
+}
+
+/* regole per tutti i block */
+.block{
+  display: inline-block;
+  border-radius: 5px;
+  margin-top:5vh;
+  background: #fff;
+  padding: 50px 100px;
+  box-shadow: 3px 3px 3px 3px #bab8b8;
+
+}
+
+.fa-check-circle:first-child{
+  margin-left: 0;
+}
+/* horizontal block */
+.block-hr{
+  padding: 100px;
+}
+.block-hr .img{
+  float: left;
+  height: 200px;
+  width: 200px;
+}
+.block-hr button{
+  font-size: 30px;
+  margin-top: 20px;
+}
+.block-hr .text{
+  margin-left:300px;
+  text-align: justify;
+  word-spacing: 5px;
+  font-size: 20px;
+  color:#33475B;
+}
+
+.block-hr .text h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.popfeat-top{
+  position: relative;
+}
+#popfeat{
+  font-size: 25px;
+}
+.popfeat{
+  position: absolute;
+  top:14px;
+  right: 0;
+}
+.block-hr .text p{
+  margin: 20px 0;
+  font-weight: 500;
+
+}
+.block-hr li{
+  list-style:none;
+  display: inline;
+}
+
+.fa-check-circle{
+  margin: 0 15px;
+  color: #FE775A;
+}
+
+
+
+
+
+
+
+
+
+
+.ciao{
+  margin-top: 5vh;
+  height: 20vh;
+  background: grey;
 }
