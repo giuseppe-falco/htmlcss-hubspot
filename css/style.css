@@ -427,10 +427,7 @@ padding: 0 15%;
 /* loghi */
 .partner-loghi{
   float: right;
-  width: 70%;
-  max-width: 65%;
-  padding-left: 150px;
-  padding-bottom: 50px;
+  max-width: 55%;
 }
 
 .partner-loghi li{
@@ -446,26 +443,26 @@ padding: 0 15%;
   text-align: right;
 }
 
-.number::after{
+.partner::after{
   content: "";
   clear: both;
   display: block;
 }
 /* sezione donna con goccia */
 .goccia{
-  margin-top:5vh;
   padding: 0 15%;
 }
 
 .goccia-left{
+  margin-top:10vh;
   float: left;
-  width: 50%;
+  width: 40%;
 }
 
 .goccia-img img{
+  margin-top:10vh;
   float:right;
-  width: 30%;
-  height: 300px;
+  width: 25%;
 }
 
 .goccia-left h2{
@@ -490,6 +487,7 @@ padding: 0 15%;
   display: table;
   clear: both;
 }
+
 /* billi bot assistenza */
 .billy{
   position: fixed;
@@ -585,6 +583,7 @@ h4{
   margin-top: 20px;
   border-radius: 5px;
   background-color: #dadee0;
+  border:none;
 }
 
 .social{
