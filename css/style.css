@@ -20,6 +20,10 @@ body{
   font-size: 16px;
   padding:30px 15%;
   border-bottom: 2px solid #32495B;
+  position:fixed;
+  top:0;
+  width: 100%;
+  z-index:2;
 }
 
 .header-signin div{
@@ -39,10 +43,58 @@ body{
 .fa-globe-europe{
   margin-right:10px;
 }
+/* sezione hover scleta lingua */
 #english{
   padding-right: 20px;
   border-right: 2px solid black;
+  position: relative;
 }
+
+#english:hover .select-language{
+  display:block;
+}
+
+#english:hover #triangle{
+  display:block;
+}
+div .select-language{
+  display: none;
+  position: absolute;
+  top: 200%;
+  left:0;
+  width: 100%;
+  background-color: #fff;
+  border: 0.7px solid #32495B;
+  border-radius: 3px ;
+
+}
+
+.select-language li{
+  list-style: none;
+  font-size: 18px;
+  padding: 10px 10px 10px 20px;
+  z-index:1;
+  color:#32495b;
+}
+
+#triangle {
+  display: none;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 150%;
+  left: 67%;
+  transform: rotate(45deg);
+  border: 0.7px solid #32495B;
+  border-bottom:none;
+  border-right:none;
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* sezione hover scleta lingua */
 .fa-chevron-down{
   margin: 0 10px;
 }
@@ -70,6 +122,11 @@ button{
   padding: 10px;
   color:#fff;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #ffbcac;
 }
 
 .login{
@@ -82,6 +139,10 @@ button{
   line-height: 80px;
   background-color: #fff;
   height: 80px;
+  position: relative;
+  top:90px;
+  z-index:1;
+  margin-bottom:90px;
 }
 
 .header-nav img{
@@ -95,11 +156,14 @@ button{
   display: inline-block;
   float: right;
   padding: 0 5px;
-  color:#466389;
+  color:#32495b;
 }
 
 li:first-child .fa-chevron-down{
   margin-right: 0;
+}
+div li{
+  cursor:pointer;
 }
 /* sezione header principale con background */
 .header-banner{
@@ -227,10 +291,11 @@ padding: 0 15%;
   border-radius: 5px;
   margin-top:5vh;
   background: #fff;
-  padding: 50px 100px;
+  padding: 50px 50px;
   box-shadow: 3px 3px 3px 3px #bab8b8;
 
 }
+
 .block, h2, p{
   color:#33475B;
 }
@@ -283,7 +348,7 @@ padding: 0 15%;
 }
 #hr-block-hr{
   position:relative;
-  top:18px;
+  top:47px;
   right: -300px;
   width:350px;
 }
@@ -543,7 +608,7 @@ padding: 0 15%;
 /* footer */
 footer{
   background-color: #32495b;
-  height: 800px;
+  /* height: 800px; */
   margin-top: 10vh;
 }
 .footer{
@@ -553,11 +618,6 @@ footer{
 
 }
 
-.colonna::after{
-  content: "";
-  clear: both;
-  display: block;
-}
 
 .colonna{
   float: left;
@@ -575,6 +635,7 @@ h4{
   color: #fff;
   list-style: none;
   line-height: 40px;
+  cursor: pointer;
 }
 
 .last-button{
@@ -593,6 +654,11 @@ h4{
   padding-bottom: 30px;
 }
 
+.colonna::after{
+  content: "";
+  clear: both;
+  display: block;
+}
 .last-section{
   text-align: center;
 }
@@ -637,6 +703,5 @@ h4{
   display: inline-block;
   word-spacing: 5px;
   margin-right: 15px;
-}
- .menu-inline li:first-child{
+  cursor:pointer;
 }
